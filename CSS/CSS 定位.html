@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CSS 定位</title>
+<style>
+p.pos_fixed   /*fixed定位*/
+{
+	position: fixed;
+	top: 30px;
+	right: 5px;
+}
+
+h2.pos_left  /*相对位置左移*/
+{
+	position: relative;
+	left: -20px;
+}
+h2.pos_right   /*相对位置右移*/
+{
+	position: relative;
+	left: 20px;
+}
+h2.pos_top   /*相对位置上移*/
+{
+	position: relative;
+	top: -50px;
+}
+
+h2.pos_absolute  /*绝对定位*/
+{
+	position: absolute;
+	left:100px;
+	top: 500px; 
+}
+
+
+
+</style>
+</head>
+<body>
+<p class="pos_fixed">Some more text</p>
+<p><b>注意:</b>IE7和IE8支持只有一个！DOCTYPE指定固定值。</p>
+<p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p><p>some text</p>
+
+<h2>这是位于正常位置的标题</h2>
+<h2 class="pos_left">这个标题相对其正常位置向左移动。</h2>
+<h2 class="pos_right">这个标题相对其正常位置向右移动。</h2>
+<p>相对定位会按照元素的原始位置对该元素进行移动。</p>
+<p>样式“left:-20px”从元素的原始左侧位置减去20像素。</p>
+<p>样式"left:20px"向元素的原始左侧位置增加20像素。</p>
+
+<h2>这是一个没有定位的标题</h2>
+<h2 class="pos_top">这个标题是根据其正常位置向上移动</h2>
+<p><b>注意:</b>即使相对定位元素的内容是移动，预留空间的元素仍保存在正常流动。</p>
+
+<h2 class="pos_absolute">这是一个绝对定位了的标题</h2>
+<p>用绝对定位，一个元素可以放在页面上的任何位置。标题下面放置距离左边的页100px和距离页面的顶部500px的元素。</p>
+</body>
+</html>

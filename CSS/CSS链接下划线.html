@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CSS链接</title>
+<style>
+a:link {text-decoration: none;}    /*未访问链接*/
+a:visited {text-decoration: none;}  /*已访问链接*/
+a:hover {text-decoration: underline;}   /*鼠标移动到链接上*/
+a:active {text-decoration: underline;}   /*鼠标点击时*/
+</style>
+</head>
+<body>
+<p><b><a href="http://www.baidu.com" target="_blank">这是一个链接</a></b></p>
+<p><b>注意：</b>a:link和a:avisited之后，需要严格按顺序才能看到效果。</p>
+<p><b>注意：</b>a:active必须在a:hover之后。</p>
+</body>
+</html>

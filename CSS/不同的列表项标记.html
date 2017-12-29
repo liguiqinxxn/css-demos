@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>不同的列表项标记</title>
+<style>
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: square;}
+ul.f {list-style-image: url("bullet.jpg");}
+/*浏览器兼容性解决方案*/
+ul.g {
+	list-style-type: none;
+	padding:0px;
+	margin: 5px;}
+ul.g li {
+	background-image: url("bullet.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 30px;}
+
+ol.c {list-style-type: upper-roman;}
+ol.d {list-style-type: lower-alpha;}
+ol.e {list-style-type: upper-latin;}
+</style>
+</head>
+
+<body>
+<p>无序列表实例</p>
+
+<ul class="a">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>	
+</ul>
+
+<ul class="b">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>	
+</ul>
+
+<ul class="f">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>	
+</ul>
+
+<p>浏览器兼容性解决方案</p>
+<ul class="g">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>	
+</ul>
+
+<p>有序列表实例</p>
+
+<ol class="c">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>		
+</ol>
+
+<ol class="d">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>		
+</ol>
+
+<ol class="e">
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>		
+</ol>
+
+<ol>
+  <li>coffee</li>
+  <li>tea</li>
+  <li> coca cola</li>	
+</ol>
+</body>
+</html>

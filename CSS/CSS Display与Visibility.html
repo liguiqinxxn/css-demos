@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CSS Display与Visibility</title>
+<style>
+p {display: inline;}   /*内联元素*/
+span {display: block;}   /*块元素*/
+
+table,th,td{
+	border: 1px solid black;
+}
+tr.collapse {
+	visibility: collapse;   /*可见性：折叠*/
+}
+</style>
+</head>
+<body>
+<p>display 属性的值为“inline”的结果</p>
+<p>两个元素显示在同一水平线上。</p>
+<span>display属性值为“block”的结果</span><span>这两个元素之间的换行符。</span>
+<br/>
+<table>
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+	</tr>
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+	<tr class="collapse">
+		<td>Lois</td>
+		<td>Griffin</td>		
+	</tr>
+</table>
+
+<p><b>注意:</b>IE8及更早版本需要通过指定！DOCTYPE才可以支持visibility：collapse。</p>
+
+</body>
+</html>
